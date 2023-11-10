@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const url= 'mongodb://0.0.0.0:27017/blog-mern-project';
+const url= 'mongodb+srv://amitsatyaram:Football2001$1234@blog.k0zstan.mongodb.net/BlogDB?retryWrites=true&w=majority';
 
 const connectToMongo = async()=>{
       
