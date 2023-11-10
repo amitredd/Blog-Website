@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchAllBlogs = async () => {
-      const res = await axios.get("http://localhost:5000/api/v1/get/allblogs", {
+      const res = await axios.get("https://blog-quv1.onrender.com/get/allblogs", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
