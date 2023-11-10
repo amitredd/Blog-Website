@@ -29,7 +29,7 @@ export default function SingleBlog() {
   return (
     <div className="container my-5">
       <div className="card shadow">
-        <img src={`http://localhost:5000/${blog.thumbnail}`} className="card-img-top" alt="Blog Thumbnail" />
+        <img src={`https://blog-quv1.onrender.com/${blog.thumbnail}`} className="card-img-top" alt="Blog Thumbnail" />
         <div className="card-body">
           <h1 className="card-title">{blog.title}</h1>
           <p className="card-text">{blog.description}</p>
