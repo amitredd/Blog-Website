@@ -27,7 +27,7 @@ export default function Login() {
       setErrors(validationErrors);
     } else {
       try {
-        const res = await axios.post('https://blog-quv1.onrender.com/user/login', input);
+        const res = await axios.post('https://blog-quv1.onrender.com/api/v1/user/login', input);
         // Reset errors if successful
         setErrors({});
         localStorage.setItem('token', res.data.token);
