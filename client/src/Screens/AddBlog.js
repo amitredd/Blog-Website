@@ -40,7 +40,7 @@ export default function AddBlog() {
     formData.append("thumbnail", file);
 
     try {
-      const res = await axios.post("https://blog-quv1.onrender.com/add/blog", formData, {
+      const res = await axios.post("https://blog-quv1.onrender.com/api/v1/add/blog", formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
