@@ -36,7 +36,7 @@ export default function Home() {
                           data-mdb-ripple-color="light"
                         >
                           <img
-                            src={`http://localhost:5000/${item.thumbnail}`}
+                            src={`https://blog-quv1.onrender.com/${item.thumbnail}`}
                             alt=""
                             className="img-fluid"
                             style={{ width: "100%", height: "200px", objectFit: "cover" }}
