@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchAllBlogs = async () => {
-      const res = await axios.get("http://localhost:5000/api/v1/get/allblogs", {
+      const res = await axios.get("https://blog-quv1.onrender.com/api/v1/get/allblogs", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -36,7 +36,7 @@ export default function Home() {
                           data-mdb-ripple-color="light"
                         >
                           <img
-                            src={`http://localhost:5000/${item.thumbnail}`}
+                            src={`https://blog-quv1.onrender.com/${item.thumbnail}`}
                             alt=""
                             className="img-fluid"
                             style={{ width: "100%", height: "200px", objectFit: "cover" }}

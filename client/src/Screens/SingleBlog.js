@@ -11,7 +11,7 @@ export default function SingleBlog() {
   useEffect(() => {
     const fetchSingleBlog = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/v1/get/blog/${id}`, {
+        const res = await axios.get(`https://blog-quv1.onrender.com/api/v1/get/blog/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
           }
@@ -29,7 +29,7 @@ export default function SingleBlog() {
   return (
     <div className="container my-5">
       <div className="card shadow">
-        <img src={`http://localhost:5000/${blog.thumbnail}`} className="card-img-top" alt="Blog Thumbnail" />
+        <img src={`https://blog-quv1.onrender.com/${blog.thumbnail}`} className="card-img-top" alt="Blog Thumbnail" />
         <div className="card-body">
           <h1 className="card-title">{blog.title}</h1>
           <p className="card-text">{blog.description}</p>
