@@ -29,7 +29,7 @@ export default function Register() {
       setErrors(validationErrors);
     } else {
       try {
-        const res = await axios.post('http://localhost:5000/api/v1/user/register', input);
+        const res = await axios.post('https://blog-quv1.onrender.com/api/v1/user/register', input);
         navigate('/login');
         // alert(res.data.message);
       } catch (error) {
